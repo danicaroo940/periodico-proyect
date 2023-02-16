@@ -1,0 +1,37 @@
+@import "../../styles/variables.scss";
+.container-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+    .news-popular{
+        display: flex;
+        border: 1px solid black;
+        border-radius: 5%;
+        width: 40%;
+        flex-direction: row;
+        
+        .container-news {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            
+            
+            width: 50%;
+            margin: 0.5rem;
+    
+            .news-title{
+                margin: auto;
+               
+            }
+            .news-img{
+                margin: auto;
+            }
+            .news-description{
+                margin: auto;
+            }
+        }
+    
+    }
+}
