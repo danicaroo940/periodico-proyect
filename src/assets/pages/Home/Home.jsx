@@ -1,6 +1,6 @@
-import axios from 'axios'
 import { useEffect, useState } from "react";
 import { Header } from "../../components/Header/Header"
+import axios from 'axios'
 import './Home.scss'
 export function Home (){
     const [news, setNews] = useState([])
@@ -19,7 +19,6 @@ export function Home (){
     return (
         <div>
             <h1>Home</h1>
-            <Header />
             <h2>Noticias populares</h2>
             <div className="container-box">
                 { news.map((item, index) => {
