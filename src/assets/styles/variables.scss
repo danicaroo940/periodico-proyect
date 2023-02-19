@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 $Primary: #FFFBE9;
-$Secondary: #E3CAA5;
+$Secondary: hsl(36, 53%, 77%);
 $Tertiary: #CEAB93;
 $Quaternary: #AD8B73;
-
-
-*{
-    background-color: #FFFBE9; 
-    font-family: 'Roboto', sans-serif;
-}
+$Background: url('https://imgs.search.brave.com/peHfdtO303D_XgQefM1rUs_1CUT-2uGJ4xt58Jf5pm4/rs:fit:1200:1080:1/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMDEv/NjI2LzY2OC9vcmln/aW5hbC9hLWRpZ2l0/YWwtcmVwcmVzZW50/YXRpb24tb2YtYS1j/b21wYXNzLWJ5LXRo/ZS1nbG9iZS1pbi1h/LWJsdWUtYmFja2dy/b3VuZC1mcmVlLXZp/ZGVvLmpwZw');
+html{
+    font-family: 'Montserrat', sans-serif;
+    background-image: $Background;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
