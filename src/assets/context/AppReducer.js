@@ -8,7 +8,7 @@ const menu = (state, action) => {
             return {
                     menu: action.payload
                 }
-        case 'CLICK_ADD':
+        case 'CLICK_ADDNEWS':
             return {
                     menu: action.payload
                 }

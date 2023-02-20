@@ -1,12 +1,21 @@
 @import '../../styles/variables.scss';
 
+
 nav {
-    background-color: #3955a3b9;
+    background-color: $Primary;
     height: 100px;
     margin: -10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border-radius: 8px;
+
+    .logo {
+        font-size: 30px;
+        font-weight: 700;
+        color: $Tertiary;
+        font: 'Montserrat', sans-serif;
+    }
 
     ul {
         list-style: none;
@@ -18,8 +27,8 @@ nav {
      
         li {
             margin: 0 10px;
-            border: 1px solid #000;
-            padding: 10px 40px;
+            border-bottom: 1px solid #000;
+            padding: 10px 10px;
             
 
             a {
@@ -29,13 +38,14 @@ nav {
         }
 
         li:hover  {
-        background-color: $Quaternary;
-        color: black;
-        
-        a:hover {
-            background-color: $Quaternary;
-            color: rgb(255, 255, 255);
-            }
+     
+            a {
+               color: rgba(255, 255, 255, 0.671);
+                text-shadow: 0 0 5px rgb(4, 0, 255),
+                            0 0 25px rgb(4, 0, 255),
+                            0 0 50px rgb(4, 0, 255),
+                            0 0 100px rgb(4, 0, 255);
+                }
             }
         }
     

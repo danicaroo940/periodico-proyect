@@ -11,7 +11,9 @@ export function Header (){
         e.preventDefault()
         console.log (e.target.innerHTML)
         clickList(e.target.innerHTML)
-        
+        const path = e.target.getAttribute('href')
+        console.log(path)
+        navigate(path)
 
     }
     useEffect(()=>{
@@ -19,8 +21,8 @@ export function Header (){
     })
     return (
         <div>
-            
             <nav>
+            <span className='logo'>INews</span>
                 <ul>
                     <li><a href ="/" onClick={(e) => handleClick(e)}>Home</a></li>
                     <li><a href ="#" onClick={(e) => handleClick(e)}>List</a></li>
