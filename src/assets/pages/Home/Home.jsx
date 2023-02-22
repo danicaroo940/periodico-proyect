@@ -1,5 +1,4 @@
-import { useEffect, useState } from "react";
-import axios from 'axios'
+import { useState } from "react";
 import './Home.scss'
 export function Home (){
     const [news, setNews] = useState(0)
@@ -46,9 +45,8 @@ export function Home (){
                 }
                 if(focus === 0){
                     setFocus(newsObject.length - 1)
-                }
+               }
         }
-    
     }
     return (
         <div>

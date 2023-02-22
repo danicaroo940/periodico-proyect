@@ -28,7 +28,7 @@ export function List (){
             const localStorageNews = localStorage.getItem('news')
             if (localStorageNews) {
                 const obj = JSON.parse(localStorageNews) 
-                setFormAddnews(obj) 
+                setFormAddnews( obj ) 
                 console.log(formAddnews)
             }
             
@@ -41,6 +41,12 @@ export function List (){
             classSwitch = 'dark'
         }
     }, [theme])
+
+    useEffect(() => {
+        console.log(formAddnews)
+        
+    }, [])
+
     return (
         <div>
             <div className="container">
@@ -60,6 +66,7 @@ export function List (){
                 </>
                 
             }
+            
 
             { news.map((item, index) => {
                 return (

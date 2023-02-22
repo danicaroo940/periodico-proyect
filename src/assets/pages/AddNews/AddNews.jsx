@@ -9,9 +9,9 @@ export function AddNews () {
         const data = Object.fromEntries(obj);
         localStorage.setItem('news', JSON.stringify(data))
         const getLocalStorageNews = localStorage.getItem('news')
-        console.log('getLocalStorageNews: ', JSON.parse(getLocalStorageNews))
+       
         navigate('/list')
-        console.log(data)
+      
     }
 
     return (
@@ -25,7 +25,7 @@ export function AddNews () {
             </div>
         <div className="user-box">
             <input required name="img" type="text"></input>
-            <label>Image</label>
+            <label>Image (url)</label>
         </div>
         <div className="user-box">
             <input required name="description" type="text"></input>
