@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
-$Primary: #d0e6ffb7;
+$Primary: #d0e6fff3;
 $Secondary: hsl(36, 53%, 77%);
 $Tertiary: #000000;
 $Quaternary: #ff5050;
 $Background: url('https://imgs.search.brave.com/1ArocPFUfBLrYsALdVGvo4_QGR6UyOxhRLV-4xVqI5Y/rs:fit:1200:1200:1/g:ce/aHR0cDovL2dldHdh/bGxwYXBlcnMuY29t/L3dhbGxwYXBlci9m/dWxsL2MvNS8zLzE2/NTQ5Mi5qcGc');
 html{
     font-family: 'Montserrat', sans-serif;
-    background-image: $Background;
+    background: linear-gradient(rgba(0, 0, 0, 0.062), rgba(0, 0, 0, 0)),$Background ;
+
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
