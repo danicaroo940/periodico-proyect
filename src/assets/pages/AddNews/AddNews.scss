@@ -59,8 +59,8 @@
   }
   
   .login-box form button {
-    position: relative;
-    display: inline-block;
+    
+    display: flex;
     padding: 10px 20px;
     color: #ffffff;
     font-size: 16px;
@@ -82,8 +82,8 @@
   }
   
   .login-box button span {
-    position: absolute;
-    display: block;
+    
+    display: flex;
   }
   .button-class{
     display: flex;
