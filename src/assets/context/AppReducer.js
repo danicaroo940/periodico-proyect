@@ -1,18 +1,10 @@
-const menu = (state, action) => {
+ export const AppReducer = (state, action) => {
     switch (action.type) {
-        case 'CLICK_HOME':
+        case 'CHANGE_THEME':
             return {
-                menu: action.payload
+                theme: action.payload
             }
-        case 'CLICK_LIST':
-            return {
-                    menu: action.payload
-                }
-        case 'CLICK_ADD':
-            return {
-                    menu: action.payload
-                }
-    };
+    }
+};
 
-}
-export default menu;
+

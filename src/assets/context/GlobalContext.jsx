@@ -1,46 +1,38 @@
 import React from "react"; 
 import { createContext, useReducer } from "react";
-import AppReducer from "./AppReducer.js";
+import { AppReducer } from "./AppReducer.js";
 
 const initialState = {
-    menu:[]
+    theme:'light'
 }
 
 export const GlobalContext = createContext();
 export const GlobalProvider = ({children}) => {
     const [state, dispatch] = useReducer(AppReducer, initialState);
 
+    function handleTheme (e){
+       if (e.target.checked === true){
+        dispatch({
+            type: 'CHANGE_THEME',
+            payload: 'dark',
+        })
+    }
+        if (e.target.checked === false){
+            dispatch({
+                type: 'CHANGE_THEME',
+                payload: 'light',
+            })
+        }   
 
+    }
 
-    const clickList = (e) => {
-        switch (e) {
-            case e = 'Home':
-                dispatch({
-                    type: 'CLICK_HOME',
-                    payload: e
-                })
-            
-            case e = 'List':
-                dispatch({
-                    type: 'CLICK_LIST',
-                    payload: e
-                })
-
-            case e = 'Add News':
-                dispatch({
-                    type: 'CLICK_ADDNEWS',
-                    payload: e
-                })
-            }
-
-        }
 
     return (
         <GlobalContext.Provider 
         value={
             {
-                menu: state.menu,
-                clickList
+                theme: state.theme,
+                handleTheme,
             }
         }
         >

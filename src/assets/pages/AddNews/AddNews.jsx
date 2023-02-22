@@ -1,11 +1,24 @@
 import React from 'react'
 import './AddNews.scss'
+import {useNavigate} from 'react-router-dom'
 export function AddNews () {
+    const navigate = useNavigate()
+    function handleSubmit(e){
+        e.preventDefault();
+        const obj = new FormData(e.target);
+        const data = Object.fromEntries(obj);
+        localStorage.setItem('news', JSON.stringify(data))
+        const getLocalStorageNews = localStorage.getItem('news')
+        console.log('getLocalStorageNews: ', JSON.parse(getLocalStorageNews))
+        navigate('/')
+        console.log(data)
+    }
+
     return (
     <>
-    <h1> Add your news</h1>
     <div className="login-box">
-        <form>
+    <h1 className='h1-loginbox'> Add your news</h1>
+        <form onSubmit={handleSubmit}>
             <div className="user-box">
                 <input required name="title" type="text"></input>
                 <label>Title</label>
