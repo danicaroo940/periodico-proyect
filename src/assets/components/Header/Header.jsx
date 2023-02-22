@@ -16,9 +16,9 @@ export function Header (){
                     <a onClick={() => navigate('/')}><li>Home</li></a>
                     <a onClick={() => navigate('/list')}><li>List</li></a>
                     <a onClick={() => navigate('/addnews')}><li>Form</li></a>
-                    <label class="switch">
+                    <label className="switch">
                         <input type="checkbox" onClick={handleTheme}></input>
-                        <span class="slider"></span>
+                        <span className="slider"></span>
                     </label>
                 </ul>
             </nav>

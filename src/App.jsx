@@ -5,7 +5,6 @@ import { GlobalProvider } from "./assets/context/GlobalContext"
 
 
 function App() {
-  
 
   return (
   <GlobalProvider>

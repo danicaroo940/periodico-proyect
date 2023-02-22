@@ -41,18 +41,18 @@ export function Home (){
         if (e.target.textContent === 'Anterior'){
             setNews((news - 1)%newsObject.length)
             setFocus((focus - 1)%newsObject.length)
-            if (news === 0){
-                setNews(newsObject.length - 1)
-            }
-            if(focus === 0){
-                setFocus(newsObject.length - 1)
-            }
+                if (news === 0){
+                    setNews(newsObject.length - 1)
+                }
+                if(focus === 0){
+                    setFocus(newsObject.length - 1)
+                }
         }
     
     }
     return (
         <div>
-            <div className="container">
+            <div className="container-home">
                 <div className="left-box">
                     <div className="news-container">
                         
@@ -73,9 +73,9 @@ export function Home (){
                     </div>
                 </div>
                 <div className="right-box">
-                    <img src={img} alt="img"/>
                     <img src={img2} alt="img" />
                     <img src={img3} alt="img" />
+                    <img src={img} alt="img"/>
                 </div>
             </div>
         </div>
